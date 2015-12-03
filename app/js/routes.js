@@ -6,23 +6,19 @@ angular.module('temps').config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('dashboard', {
       url: "/dashboard",
-      templateUrl: "../partials/dashboard.html"
+      templateUrl: "app/partials/dashboard.html"
     })
-  /*  Reserved for future use
-    .state('state1.list', {
-      url: "/list",
-      templateUrl: "partials/state1.list.html",
-      controller: function($scope) {
-        $scope.items = ["A", "List", "Of", "Items"];
-      }
-    })
-    */
     .state('unit', {
-      url: "/unit",
-      templateUrl: "../partials/unit.html"
+      url: "/unit/:subunit",
+      templateUrl: "app/partials/unit.html",
+      controller: "unitController"
+    })
+    .state('staff', {
+      url: "/staff",
+      templateUrl: "app/partials/staff.html"
     })
     .state('recordTemp', {
       url: "/recordTemp",
-      templateUrl: "../partials/recordTemp.html"
+      templateUrl: "app/partials/recordTemp.html"
     });
 });

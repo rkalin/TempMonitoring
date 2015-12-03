@@ -1,0 +1,20 @@
+.good {
+    border-style: solid;
+    border-width: 5px;
+	border-color: green;
+}
+.warning {
+    border-style: solid;
+    border-width: 5px;
+	border-color: orange;
+}
+.bad {
+    border-style: solid;
+    border-width: 5px;
+	border-color: red;
+}
+.off {
+    border-style: solid;
+    border-width: 5px;
+	border-color: black;
+}
