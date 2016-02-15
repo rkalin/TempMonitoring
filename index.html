@@ -2,20 +2,33 @@
 <html>
 	<head>
 		<meta charset="utf8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Dining Services Temp</title>
-		<link rel="stylesheet" type="text/css" href="app/css/main.css">
+		<link rel="stylesheet" type="text/css" href="/app/css/main.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	</head>
 	<body class="container" ng-app="temps">
 		<!-- NAV CONTENT -->
 		<div class="navbar navbar-default navbar-static-top">
-			<div class="container-fluid">
-				<ul class="nav navbar-nav">
-					<li><a ui-sref="dashboard">Dashboard</a></li>
-					<li><a ui-sref="staff">Staff</a></li>
-					<li><a ui-sref="unit">Units</a></li>
-					<li><a ui-sref="recordTemp">Manual Temp</a></li>
-				</ul>
+			<div class="container">
+				<div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+					<ul class="nav nav-pills">
+						<li><a ui-sref="dashboard">Dashboard</a></li>
+						<li><a ui-sref="user">Users</a></li>
+						<li><a ui-sref="unit">Units</a></li>
+						<li><a ui-sref="recordTemp">Manual Temp</a></li>
+						<li><a ui-sref="admin">Admin</a></li>
+					</ul>
+				</div>
 			</div>
   	</div>
 
@@ -28,9 +41,11 @@
 		<!-- Vendor -->
 		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular-resource.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-resource.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-1.1.0.js"></script>
 
 		<!-- app -->
 		<script src="app/js/app.js"></script>
@@ -38,6 +53,7 @@
 
 		<!-- controllers -->
 		<script src="app/js/controller/unitController.js"></script>
+		<script src="app/js/controller/adminController.js"></script>
 
 		<!-- services -->
 		<!-- directives -->

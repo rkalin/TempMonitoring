@@ -1,0 +1,74 @@
+<form class="form-horizontal">
+	<fieldset>
+
+		<!-- Form Name -->
+		<legend>Unit Creation - Unit Name</legend>
+
+		<!-- Select Basic -->
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="UnitName">Unit</label>
+			<div class="col-md-4">
+				<select id="UnitName" name="UnitName" class="form-control">
+					<option value="1">Sol's Underground</option>
+					<option value="2">Corner Store</option>
+				</select>
+			</div>
+		</div>
+
+		<!-- Text input-->
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="unserName">RIT User ID</label>
+			<div class="col-md-4">
+				<input id="unserName" name="unserName" placeholder="" class="form-control input-md" required="" type="text">
+
+			</div>
+		</div>
+
+		<!-- Select Basic -->
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="userLevel">User Access</label>
+			<div class="col-md-4">
+				<select id="userLevel" name="userLevel" class="form-control">
+					<option value="1">Admin</option>
+					<option value="2">Manager</option>
+					<option value="3">Staff</option>
+					<option value="4">Student</option>
+				</select>
+			</div>
+		</div>
+
+		<!-- Select Basic -->
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="userSchedule">Schedule</label>
+			<div class="col-md-4">
+				<select id="userSchedule" name="userSchedule" class="form-control">
+					<option value="1">Option one</option>
+					<option value="2">Option two</option>
+				</select>
+			</div>
+		</div>
+
+		<!-- Prepended checkbox -->
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="textWarning">Recieve Warnings by text also?</label>
+			<div class="col-md-4">
+				<div class="input-group">
+					<span class="input-group-addon">
+						<input type="checkbox">
+					</span>
+					<input id="textWarning" name="textWarning" class="form-control" placeholder="(555) 555-1234" type="text">
+				</div>
+				<p class="help-block">If user access is staff, a text or email will only go out during the times of their schdule.</p>
+			</div>
+		</div>
+
+		<!-- Button -->
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="submit"></label>
+			<div class="col-md-4">
+				<button id="submit" name="submit" class="btn btn-primary">Add User</button>
+			</div>
+		</div>
+
+	</fieldset>
+</form>

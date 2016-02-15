@@ -1,0 +1,82 @@
+<form class="form-horizontal">
+	<fieldset>
+
+		<!-- Form Name -->
+		<legend>Add Food</legend>
+
+		<!-- Select Basic -->
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="UnitName">Unit</label>
+			<div class="col-md-4">
+				<select id="UnitName" name="UnitName" class="form-control">
+					<option value="1">Sol's Underground</option>
+					<option value="2">Corner Store</option>
+				</select>
+			</div>
+		</div>
+
+		<!-- Text input-->
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="foodName">Food Name</label>
+			<div class="col-md-4">
+				<input id="foodName" name="foodName" placeholder="" class="form-control input-md" required="" type="text">
+
+			</div>
+		</div>
+
+		<!-- Select Basic -->
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="probUsed">Probe</label>
+			<div class="col-md-4">
+				<select id="probUsed" name="probUsed" class="form-control">
+					<option value="1">Probe Common Name</option>
+				</select>
+			</div>
+		</div>
+
+		<!-- Select Basic -->
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="foodTemp">Food Temprature</label>
+			<div class="col-md-4">
+				<select id="foodTemp" name="foodTemp" class="form-control">
+					<option value="1">Hot (&gt;140)</option>
+					<option value="2">Cold (&lt;40)</option>
+				</select>
+			</div>
+		</div>
+
+		<!-- Prepended checkbox -->
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="specialItem1">Specialty food</label>
+			<div class="col-md-4">
+				<div class="input-group">
+					<span class="input-group-addon">
+						<input type="checkbox">
+					</span>
+					<input id="specialItem1" name="specialItem1" class="form-control" placeholder="" type="text">
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Select Basic -->
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="selectbasic">Select Basic</label>
+			<div class="col-md-4">
+				<select id="selectbasic" name="selectbasic" class="form-control">
+					<option value="1">Option one</option>
+					<option value="2">Option two</option>
+				</select>
+			</div>
+		</div>
+
+		<!-- Button -->
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="submit"></label>
+			<div class="col-md-4">
+				<button id="submit" name="submit" class="btn btn-primary">Add Food</button>
+			</div>
+		</div>
+
+	</fieldset>
+</form>

@@ -1,0 +1,22 @@
+<div class="container col-md-3">
+	<div class="left-nav">
+		<uib-accordion close-others="true" ng-controller="ItemController">
+			<uib-accordion-group  is-open="isopen"
+													 ng-repeat="item in items">
+				<uib-accordion-heading>
+					{{item.desc}}
+					<i class="pull-right glyphicon"
+						 ng-class="{'glyphicon-chevron-down': isopen, 'glyphicon-chevron-right': !isopen}"></i>
+				</uib-accordion-heading>
+				<div ng-repeat="subitem in item.subitems">
+					<a ui-sref="{{subitem.refName}}">{{subitem.desc}}</a>
+				</div>
+			</uib-accordion-group>
+		</uib-accordion>
+	</div>
+</div>
+
+<form id="setup-form" ng-submit="processForm()">
+	<!-- our nested state views will be injected here -->
+	<div id="form-views" ui-view class="col-md-9"></div>
+</form>
