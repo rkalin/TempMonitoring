@@ -49,7 +49,8 @@ angular.module('temps').config(function($stateProvider, $urlRouterProvider) {
     })
   .state('admin.thermCreate', {
       url: "/thermAdd",
-      templateUrl: "app/partials/therm.create.html"
+      templateUrl: "app/partials/therm.create.html",
+      controller: "NewThermController"
     })
   .state('admin.thermEdit', {
       url: "/thermEdit",

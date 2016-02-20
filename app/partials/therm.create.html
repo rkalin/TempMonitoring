@@ -8,10 +8,7 @@
 		<div class="form-group">
 			<label class="col-md-4 control-label" for="UnitName">Unit</label>
 			<div class="col-md-4">
-				<select id="UnitName" name="UnitName" class="form-control">
-					<option value="1">Sol's Underground</option>
-					<option value="2">Corner Store</option>
-				</select>
+				<input type="text" disable>{{thermList.Unit_name}}
 			</div>
 		</div>
 
@@ -19,8 +16,7 @@
 		<div class="form-group">
 			<label class="col-md-4 control-label" for="tempSerial">Thermometer Serial #</label>
 			<div class="col-md-4">
-				<input id="tempSerial" name="tempSerial" placeholder="" class="form-control input-md" required="" type="text">
-
+				<input id="tempSerial" name="tempSerial" placeholder="" class="form-control input-md" required="" type="text" disabled>{{thermList.Therm_serial}}
 			</div>
 		</div>
 

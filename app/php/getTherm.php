@@ -1,10 +1,10 @@
 <?php
-require_once("SiteConfigVars.php");
+//require_once("SiteConfigVars.php");
 
-$myDbPass = getConfigValue("dbPass_w_menu");
-$myDbHost = getConfigValue("dbHost_w_menu");
-$myDbName = "w_menu";
-$myDbUser = "w-menu";
+$myDbPass = "qT314!0Mg!";//getConfigValue("dbPass_w_menu");
+$myDbHost = "localhost";//getConfigValue("dbHost_w_menu");
+$myDbName = "rmkservi_temps";//"w_menu";
+$myDbUser = "rmkservi_bash";//"w-menu";
 
 $conn = new mysqli($myDbHost, $myDbUser, $myDbPass, $myDbName);
 
@@ -15,7 +15,7 @@ if ($conn->connect_error) {
   trigger_error('Database connection failed: '  . $conn->connect_error, E_USER_ERROR);
 }
 
-$sql='SELECT Therm_serial FROM Thermometer WHERE Common_name = NULL';
+$sql='SELECT t.Therm_serial,u.Unit_name FROM Thermometer t JOIN Unit u ON u.unit_id = t.Therm_unit_id WHERE Common_name = NULL';
 $rs=$conn->query($sql);
 
 if($rs === false) {
